@@ -11,7 +11,9 @@ The Basic Concept is:
   expect $ value1 `predicate` value2
 ```
 For example:
+```haskell
   expect $ 1 `toBe` 0+1
+```
 if this test passes (as it should) then the program won't give
 you any  notice of it. But if it would fail as here for example:
  ```haskell
