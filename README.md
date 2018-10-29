@@ -5,7 +5,7 @@ like the simple Syntax of the expect function
 that they used and that made a test much like
 native english.
 I wanted to port that to Haskell.
-##Expect Syntax
+## Expect Syntax
 The Basic Concept is:
   expect $ value1 `predicate` value2
 For example:
@@ -18,7 +18,7 @@ it will print out a message like this:
 every predicate generates such a  message and expect will print it out
 if the test fails.
 
-##Setup your project for TestHaskell
+## Setup your project for TestHaskell
 I don't won't you to transform your whole project
 just to use my Framework. Instead you can just copy the 
 Test.hs file into your own project then
