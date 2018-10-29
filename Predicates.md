@@ -1,4 +1,4 @@
-# List of all predicates that I use and a reference for how to develope your own predicate.
+# List of all predicates that I predefined and an intro to how to develope your own predicate.
 
 ### toBe 
 `toBe` has the following constraints:
