@@ -53,28 +53,28 @@ expect TestInfo {
 
 -- |A Collection of predicates to use for expect.
 
-toBe :: (Num a,Eq a,Show a) => a -> a -> TestInfo
+toBe :: (Eq a,Show a) => a -> a -> TestInfo
 v1 `toBe` v2 =
   TestInfo  {
     test=fromBool $ v1==v2,
     test_info = show v1 ++ " should be equal to " ++ show v2
   }
 
-notToBe :: (Num a,Eq a,Show a) => a -> a -> TestInfo
+notToBe :: (Eq a,Show a) => a -> a -> TestInfo
 v1 `notToBe` v2 =
   TestInfo {
     test=fromBool $ v1 /= v2,
     test_info = show v1 ++ " should not be equal to " ++ show v2
   }
 
-toBeGreaterThen :: (Num a,Ord a, Show a) => a -> a -> TestInfo
+toBeGreaterThen :: (Ord a, Show a) => a -> a -> TestInfo
 v1 `toBeGreaterThen` v2 =
   TestInfo {
      test=fromBool $ v1 > v2,
      test_info = show v1 ++ " should be greater then " ++ show v2
   }
 
-toBeLessThen :: (Num a,Ord a,Show a) => a -> a -> TestInfo
+toBeLessThen :: (Ord a,Show a) => a -> a -> TestInfo
 v1 `toBeLessThen` v2  =
   TestInfo {
     test=fromBool $ v1 < v2,
