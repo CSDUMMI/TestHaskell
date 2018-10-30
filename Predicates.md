@@ -52,7 +52,7 @@ the error message. `expect` uses it to determine wheter the test failed and if s
   yourself a hint to what went wrong.
   
   ### Define a toBeGreaterThenOrEqualTo predicate
-  Lets define a sample predicate that not just  tests if some thing greater then but also
+  Lets define a sample predicate that not just  tests if some thing is greater then but also
   if it is equal.
   We start with the function constrain:
   ```haskell
