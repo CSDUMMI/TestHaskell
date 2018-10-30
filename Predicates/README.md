@@ -24,7 +24,8 @@ change in the Test.hs
 
 # Some other Predicates avaible in this Directory 
 
-- hasLength.hs - [A Predicate for the Length of a List] (#hasLength)
+- hasLength.hs - <a name="hasLength">A Predicate for List length 
+comparision </a>
 
 
 
